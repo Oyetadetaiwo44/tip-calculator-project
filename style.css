@@ -42,8 +42,8 @@ font-family: 'Space Mono', monospace;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    width: 420px;
-    height: 200px;
+    max-width: 450px;
+    height: 250px;
     border-radius: 10px;
     gap: 2px;
 }
@@ -52,6 +52,7 @@ h3{
     color: hsl(183, 100%, 15%);
     font-weight: 200;
     font-size: 9px;
+    margin-bottom: 5px;
 }
 
 .bg-bill{
@@ -60,6 +61,7 @@ h3{
   justify-content: space-between;
   align-items: center;
   padding: 0 5px;
+  margin-bottom: 15px;
 }
 
 
@@ -82,6 +84,7 @@ font-weight: bold;
   border: none;
   /* font-weight: bold; */
   font-family: 'Space Mono', monospace;
+  margin-bottom: 10px;
 }
 
 .btn-group-1, .btn-group-2{
@@ -114,8 +117,12 @@ width: 7px;
 .right-box{
 background-color: hsl(183, 100%, 15%);
 border-radius: 10px;
-width: 150px;
+width: 170px;
 padding: 15px;
+height: 220px;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .tips, .total{
@@ -133,6 +140,7 @@ font-size: 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .fig-color{
@@ -148,6 +156,7 @@ font-size: 9px;
   padding: 5px 45px;
   text-transform: uppercase;
   font-size: 9px;
+  margin-top: 4.5rem;
 }
 
 .dollar-size{
@@ -156,6 +165,24 @@ font-size: 9px;
 
 .person{
   color: hsl(185, 41%, 84%);
-  font-size: 9px;
+  font-size: 6px;
 }
 
+.tips, .total{
+  margin-bottom: 0;
+}
+
+.total-person{
+  margin-top: 30px;
+}
+
+.amount, .total-person{
+  gap: 20px;
+}
+
+/* Media Query */
+@media screen and (max-width:500px){
+  .container{
+    flex-direction: column;
+  }
+}

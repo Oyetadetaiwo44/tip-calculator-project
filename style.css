@@ -42,10 +42,10 @@ font-family: 'Space Mono', monospace;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    max-width: 450px;
-    height: 250px;
+    /* max-width: 450px;
+    height: 250px; */
     border-radius: 10px;
-    gap: 2px;
+    gap: 15px;
 }
 h3{
     text-transform: capitalize;
@@ -117,9 +117,9 @@ width: 7px;
 .right-box{
 background-color: hsl(183, 100%, 15%);
 border-radius: 10px;
-width: 170px;
-padding: 15px;
-height: 220px;
+/* width: 170px; */
+padding: 7px;
+/* height: 220px; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -134,14 +134,20 @@ font-size: 9px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 70px;
 }
 
 .total-person{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+  gap: 80px
 }
+
+/* .amount, .total-person{
+  gap: 70px;
+} */
+
 
 .fig-color{
   color: hsl(172, 67%, 45%);
@@ -156,7 +162,9 @@ font-size: 9px;
   padding: 5px 45px;
   text-transform: uppercase;
   font-size: 9px;
-  margin-top: 4.5rem;
+  margin-top: 80px;
+  display: block;
+  width: 90%;
 }
 
 .dollar-size{
@@ -176,13 +184,16 @@ font-size: 9px;
   margin-top: 30px;
 }
 
-.amount, .total-person{
-  gap: 20px;
-}
 
 /* Media Query */
-@media screen and (max-width:500px){
+@media (max-width:500px){
   .container{
     flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .reset{
+    margin-top: 10px;
   }
 }
